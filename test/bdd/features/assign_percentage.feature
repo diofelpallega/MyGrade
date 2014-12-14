@@ -1,5 +1,6 @@
 Feature: Assign percentage on the created partition of grading items.
 
+	@assign_1
 	Scenario: Assign percentage to grading item
 	Given a grading item "Quiz" and "Exam" on Grading period "Prelim"
 	Then I set the percentage of grading item "Quiz" to "30" percent
@@ -8,6 +9,7 @@ Feature: Assign percentage on the created partition of grading items.
 	|Quiz  |Exam |
 	|30    |70   |
 
+	@assign_2
 	Scenario: Assigning percentage to a grading item with total more than 100%
 	Given a grading item "Quiz" and "Exam" on Grading period "Prelim"
 	Then I set the percentage of grading item "Quiz" to "40" percent
