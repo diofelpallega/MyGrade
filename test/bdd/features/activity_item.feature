@@ -17,7 +17,7 @@ Feature: Add/Remove Activity Item and Input/Edit total Item
 	@tag3
 	Scenario: Edit the total items
 	Given I have a total items of "20" for activity item "Quiz1"
-	When I edit the total items of "10"
+	When I edit the total items to "10"
 	Then I have a total items of "10" for activity item "Quiz1"
 
 	@tag4
